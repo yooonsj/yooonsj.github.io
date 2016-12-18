@@ -1,0 +1,15 @@
+---
+    layout: default
+---
+<!-- Main -->
+<div id="main" class="content">
+    <div class="cover"></div>
+    <div class="wrapper">
+        <div>
+            {% for post in paginator.posts %}
+              {% include item.html %}
+            {% endfor %}
+            {% include pagination.html %}
+        </div>
+    </div>
+</div>

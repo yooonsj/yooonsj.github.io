@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div id="tag">
+    <div class="cover">
+        <h1>#{{ page.tag }}</h1>
+    </div>
+    <div class="wrapper">
+        <div>
+            {% for post in page.posts %}
+                {% include item.html %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

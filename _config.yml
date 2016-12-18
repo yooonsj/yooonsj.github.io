@@ -1,0 +1,111 @@
+title: yooonsj's blog
+email: yooonsj@gmail.com
+description: |
+  Connect Everything 새로운 연결, 새로운 세상.
+  연결의 혁신으로 세상은 더욱 가깝고 새로워진다고 카카오는 믿습니다.
+baseurl: ''
+url: 'http://yooonsj.github.io'
+
+# Where things are
+source:       .
+destination:  ./_site
+plugins_dir:  _plugins
+layouts_dir:  _layouts
+data_dir:     _data
+includes_dir: _includes
+collections:
+  posts:
+    output:   true
+
+# Handling Reading
+safe:         false
+# include:      [".htaccess"]
+exclude:      [Gemfile, Gemfile.lock, params.json]
+keep_files:   [assets]
+encoding:     utf-8
+# markdown_ext: markdown, mkdown, mkdn, mkd, md
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      false
+unpublished: false
+
+# Plugins
+whitelist: []
+gems:
+    - jekyll-paginate
+    # - jekyll-paginate-categories
+    # - jekyll/tagging
+
+# Conversion
+markdown:    kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: <!--more-->
+incremental: false
+
+# Outputting
+permalink:     :categories/:year:month:day/:slug
+paginate: 3
+paginate_path: /page/:num
+# paginate_category_basepath: /:name/
+# paginate_category_layout: category.html
+# tag_page_layout: tag
+# tag_page_dir: /tags
+
+timezone: Asia/Seoul
+
+quiet:    false
+verbose:  false
+defaults: []
+
+liquid:
+  error_mode: warn
+
+# Markdown Processors
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions: []
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  input:          GFM
+  hard_wrap:      false
+  footnote_nr:    1
+
+
+# permalink: /:year/:month/:day/:title/
+#
+# paginate: 5
+# paginate_path: '/page/:num/'
+#
+# collections:
+#   authors:
+#     output: true
+#     permalink: /authors/:path/
+#   tags:
+#     output: true
+#     permalink: /tags/:path/
+#
+# defaults:
+#   - scope:
+#       path: ''
+#       type: authors
+#     values:
+#       layout: author
+#   - scope:
+#       path: ''
+#       type: tags
+#     values:
+#       layout: tag
+#
+# exclude: [README.md, Gemfile, Gemfile.lock]
+#
+# keep_files: [assets]

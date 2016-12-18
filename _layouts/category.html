@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div id="category" class="content">
+    <div class="cover">
+        <h1>{{ page.category }}</h1>
+    </div>
+    <div class="wrapper">
+        <div>
+            {% for post in paginator.posts %}
+            {% include item.html %}
+            {% endfor %}
+            {% include pagination.html %}
+        </div>
+    </div>
+</div>
